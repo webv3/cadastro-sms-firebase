@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Código de verificação</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-label>Código</ion-label>
+            <ion-input [(ngModel)]="codigo"></ion-input>
+        </ion-item>
+    </ion-list>
+    <ion-button (click)="verificarCodigo()">Confirmar</ion-button>
+</ion-content>

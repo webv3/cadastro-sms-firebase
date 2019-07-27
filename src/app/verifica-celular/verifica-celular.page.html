@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>cadastro</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <h3>Enviaremos um codigo de verificação para seu celular</h3>
+    <ion-list>
+        <ion-item>
+            <ion-label>Celular</ion-label>
+            <ion-input [(ngModel)]="celular"></ion-input>
+            <ion-button (click)="enviarCodigo()" *ngIf="recaptchaChecado">Enviar</ion-button>
+        </ion-item>
+    </ion-list>
+
+    <div id="recaptcha-container"></div>
+</ion-content>
